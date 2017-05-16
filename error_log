@@ -1,0 +1,7 @@
+[26-Jul-2016 13:12:11 Etc/GMT] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, boolean given in /home/csinffze/public_html/lmss/provisional_quotation_form.php on line 346
+[26-Jul-2016 13:17:17 Etc/GMT] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, boolean given in /home/csinffze/public_html/lmss/provisional_quotation_form.php on line 346
+[28-Jul-2016 13:27:51 Etc/GMT] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, boolean given in /home/csinffze/public_html/lmss/provisional_quotation_form.php on line 346
+[12-Aug-2016 11:30:43 Etc/GMT] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, boolean given in /home/csinffze/public_html/lmss/provisional_quotation_form.php on line 346
+[14-Sep-2016 14:16:19 Etc/GMT] PHP Notice:  Undefined index: username in /home/csinffze/public_html/lmss/add_employee.php on line 3
+[28-Sep-2016 11:45:00 Etc/GMT] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, boolean given in /home/csinffze/public_html/lmss/provisional_quotation_form.php on line 346
+[25-Oct-2016 12:37:35 Etc/GMT] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, boolean given in /home/csinffze/public_html/lmss/provisional_quotation_form.php on line 346

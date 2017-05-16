@@ -1,0 +1,68 @@
+//validation server side start
+if (!ctype_alpha(str_replace(array("'", "-" , " "), "",$firstname))) { 
+			$errors = "<font color='red'>First name should be alpha characters only.</font>";
+}	
+if (!ctype_alpha(str_replace(array("'", "-", " "), "",$lastname))) { 
+			$errors = "<font color='red'>Last name should be alpha characters only.</font>";
+}	
+if (!ctype_alpha(str_replace(array("'", " "), "",$emp_city))) { 
+			$errors = "<font color='red'>City should be alpha characters only.</font>";
+}
+/* if (!ctype_alpha(str_replace(array("'", " " , "(" , ")" , "-" , "," , "/"), "",$emp_add))) { 
+			$errors = "<font color='red'>Address should be alpha characters only.</font>";
+} */	
+
+if (!ctype_alpha(str_replace(array("'", " "), "",$emp_state))) { 
+			$errors = "<font color='red'>State should be alpha characters only.</font>";
+}	
+# Validate Email #
+		// if email is invalid, throw error
+		if (!filter_var($emp_email, FILTER_VALIDATE_EMAIL)) { 
+			$errors = "<font color='red'>Enter a valid email address.</font>";
+		}
+# Validate offically Email #
+		// if email is invalid, throw error
+		/*if (!filter_var($offically_email, FILTER_VALIDATE_EMAIL)) {
+			$errors = 'Enter a valid official email address.';
+		}*/
+# Validate Phone #
+		// if phone is invalid, throw error
+		if (!ctype_digit($emp_mobileno) OR strlen($emp_mobileno) != 10) {
+			$errors = "<font color='red'> Enter a valid phone number.</font>";
+		}
+# Validate Phone #
+		// if phone is invalid, throw error
+		/*if (!ctype_digit($offically_mobileno) OR strlen($offically_mobileno) != 10) {
+			$errors = ' Enter a valid offically phone number.';
+		}*/
+# Validate Phone #
+		// if phone is invalid, throw error
+		if (!ctype_digit($emp_pincode) OR strlen($emp_pincode) != 6) {
+			$errors = 'Enter a valid pin Code.';
+		}
+# Validate Phone #
+		// if phone is invalid, throw error
+		if (!ctype_digit($emp_basic_amount)) {
+			$errors = 'Enter a valid basic Amount.';
+		}
+# Validate Phone #
+		// if phone is invalid, throw error
+		if (!ctype_digit($emp_hra) ) {
+			$errors = 'Enter a valid hra.';
+		}
+		# Validate Phone #
+		// if phone is invalid, throw error
+		if (!ctype_digit($emp_conveyance)) {
+			$errors = 'Enter a valid conveyance.';
+		}
+		# Validate Phone #
+		// if phone is invalid, throw error
+		if (!ctype_digit($mobile_allo) ) {
+			$errors = 'Enter a valid mobile allowance.';
+		}
+# Validate Phone #
+		// if phone is invalid, throw error
+		if (!ctype_digit($other_allo) ) {
+			$errors = 'Enter a valid other allowance.';
+		}
+		//validation server side ends
